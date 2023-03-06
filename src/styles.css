@@ -99,6 +99,7 @@ nav > .nav-section {
     }
     #nav-name-section {
         flex-basis: 95%;
+        margin-left: 5%;
     }
     #nav-link-section {
         flex-grow: 1;
@@ -115,8 +116,9 @@ main {
 main > article {
     display: grid;
     height: 100%;
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr; */
+    grid-template-columns: 1fr 1fr;
+    gap: 5;
+    /* grid-template-rows: 2fr 1fr;  */
 }
 
 main > article > .home-img-section {
@@ -165,4 +167,42 @@ main > article > .home-img-section {
 .work-img {
     max-width: 100%;
     object-fit: cover;
+}
+
+/* ----- BIO SECTION ----- */
+
+.biopic {
+    max-height: 220px;
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+#bio-img {
+    justify-self: end;
+}
+
+#bio-txt {
+    white-space: pre-line;
+}
+
+.bio-main > article {
+    grid-template-columns: 1fr 2fr;
+    transition: ease all .5s;
+}
+
+@media screen and (max-width: 800px) {
+.bio-main > article {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 180px;
+    
+}
+#bio-img {
+    justify-self: center;
+}
+.biopic {
+    max-width: 300px;
+}
+#bio-txt {
+    justify-self: center;
+}
 }
