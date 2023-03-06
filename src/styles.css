@@ -120,37 +120,23 @@ main > article {
 }
 
 main > article > .home-img-section {
+    height: 100vh;
+    width: 100vw;
     max-height: 100%;
     background: url("../resources/img/blue-home.jpeg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% cover;
-    
+    z-index: 0;
+    position: absolute;
 }
 
 .menu-bg {
-    color: transparent;
     display: none;
     height: 100vh;
     width: 100vw;
-    z-index: 2;
+    z-index: 1;
+    position: relative;
 }
-
-/* main > article > .home-desc-section {
-    display: flex;
-    padding: 3rem;
-}
-
-main > article > .home-desc-section > p {
-    align-self: flex-end;
-}
-
-main > article > .home-title-section {
-    display: flex;
-    padding: 5rem;
-    justify-content: left;
-    align-items: center;
-} */
 
 /* ----- WORKS SECTION ----- */
 
